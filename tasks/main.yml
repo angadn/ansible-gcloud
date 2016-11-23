@@ -1,2 +1,11 @@
 ---
-# tasks file for ansible-gcloud
+- name: download and extract google sdk
+  unarchive:
+    src: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-135.0.0-linux-x86_64.tar.gz
+    dest: /usr/local
+    remote_src: yes
+- name: add google sdk to path
+  copy:
+    content: export PATH=$PATH:/usr/local/google-cloud-sdk/bin
+    dest: /etc/profile.d/gcloud.sh
+    mode: 0755
