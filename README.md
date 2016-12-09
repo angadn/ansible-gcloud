@@ -11,7 +11,23 @@ None.
 Role Variables
 --------------
 
-None.
+gcloud version
+
+```
+google_cloud_sdk_version: 136.0.0
+```
+
+gcloud platfrom - see [avaiable platforms] (https://cloud.google.com/sdk/downloads)
+
+```
+google_cloud_sdk_platfrom: linux-x86_64
+```
+
+gcloud checksum - see [checksums] (https://cloud.google.com/sdk/downloads)
+
+```
+google_cloud_sdk_sha1sum: cea487b1a14cfeaae28c24921ae34fb9f267e639
+```
 
 Dependencies
 ------------
