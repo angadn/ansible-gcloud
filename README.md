@@ -17,10 +17,10 @@ gcloud version
 google_cloud_sdk_version: 136.0.0
 ```
 
-gcloud platfrom - see [avaiable platforms] (https://cloud.google.com/sdk/downloads)
+gcloud platform - see [avaiable platforms] (https://cloud.google.com/sdk/downloads)
 
 ```
-google_cloud_sdk_platfrom: linux-x86_64
+google_cloud_sdk_platform: linux-x86_64
 ```
 
 gcloud checksum - see [checksums] (https://cloud.google.com/sdk/downloads)

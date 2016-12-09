@@ -1,12 +1,12 @@
 ---
 - name: download google sdk
   get_url:
-    url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ google_cloud_sdk_version }}-{{ google_cloud_sdk_platfrom }}.tar.gz
-    dest: /tmp/google-cloud-sdk-{{ google_cloud_sdk_version }}-{{ google_cloud_sdk_platfrom }}.tar.gz
+    url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ google_cloud_sdk_version }}-{{ google_cloud_sdk_platform }}.tar.gz
+    dest: /tmp/google-cloud-sdk-{{ google_cloud_sdk_version }}-{{ google_cloud_sdk_platform }}.tar.gz
     checksum: sha1:{{ google_cloud_sdk_sha1sum }}
 - name: extract google sdk
   unarchive:
-    src: /tmp/google-cloud-sdk-{{ google_cloud_sdk_version }}-{{ google_cloud_sdk_platfrom }}.tar.gz
+    src: /tmp/google-cloud-sdk-{{ google_cloud_sdk_version }}-{{ google_cloud_sdk_platform }}.tar.gz
     dest: /usr/local
     copy: no
 - name: add links to gcloud, gsutil and bq

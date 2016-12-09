@@ -1,5 +1,5 @@
 ---
 # defaults file for ansible-gcloud
 google_cloud_sdk_version: 136.0.0
-google_cloud_sdk_platfrom: linux-x86_64
+google_cloud_sdk_platform: linux-x86_64
 google_cloud_sdk_sha1sum: cea487b1a14cfeaae28c24921ae34fb9f267e639
