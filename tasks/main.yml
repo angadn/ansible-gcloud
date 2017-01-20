@@ -10,7 +10,11 @@
     dest: /usr/local
     copy: no
 - name: add links to gcloud, gsutil and bq
-  file: state=link force=yes src=/usr/local/google-cloud-sdk/bin/{{ item }} dest=/usr/bin/{{ item }}
+  file:
+    state: link
+    force: yes
+    src: /usr/local/google-cloud-sdk/bin/{{ item }}
+    dest: /usr/bin/{{ item }}
   with_items:
     - gcloud
     - gsutil
